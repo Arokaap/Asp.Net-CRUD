@@ -1,0 +1,15 @@
+# Ignorar la carpeta 'packages'
+packages/
+
+# Ignorar carpetas generadas durante la compilacion
+bin/
+obj/
+
+# Archivos especificos del usuario de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpeta generada por Visual Studio
+.vs/
