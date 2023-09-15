@@ -59,7 +59,7 @@ namespace CRUD.DataLayer
             }
         }
 
-        public Empleado Obtener(int IdEmpleado)
+        public Empleado Obtener(int idEmpleado)
         {
             Empleado entidad = new Empleado();
 
@@ -69,7 +69,7 @@ namespace CRUD.DataLayer
                     "SELECT * FROM fn_empleado(@idEmpleado)",
                     oConexion
                 );
-                cmd.Parameters.AddWithValue("@idEmpleado", IdEmpleado);
+                cmd.Parameters.AddWithValue("@idEmpleado", idEmpleado);
                 cmd.CommandType = CommandType.Text;
 
                 try
