@@ -112,7 +112,7 @@ namespace CRUD.DataLayer
             {
                 SqlCommand cmd = new SqlCommand("sp_CrearEmpleado", oConexion);
                 cmd.Parameters.AddWithValue("@NombreCompleto", entidad.NombreCompleto);
-                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento);
+                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento.IdDepartamento);
                 cmd.Parameters.AddWithValue("@Sueldo", entidad.Sueldo);
                 cmd.Parameters.AddWithValue("@FechaContrato", entidad.FechaContrato);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -149,7 +149,7 @@ namespace CRUD.DataLayer
                 SqlCommand cmd = new SqlCommand("sp_EditarEmpleado", oConexion);
                 cmd.Parameters.AddWithValue("@IdEmpleado", entidad.IdEmpleado);
                 cmd.Parameters.AddWithValue("@NombreCompleto", entidad.NombreCompleto);
-                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento);
+                cmd.Parameters.AddWithValue("@IdDepartamento", entidad.Departamento.IdDepartamento);
                 cmd.Parameters.AddWithValue("@Sueldo", entidad.Sueldo);
                 cmd.Parameters.AddWithValue("@FechaContrato", entidad.FechaContrato);
                 cmd.CommandType = CommandType.StoredProcedure;

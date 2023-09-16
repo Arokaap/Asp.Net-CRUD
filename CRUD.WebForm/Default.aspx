@@ -19,11 +19,11 @@
 
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:LinkButton runat="server" CommandArgument="<%# Eval("IdEmpleado") %>" OnClick="Editar_Click" CssClass="btn btn-sm btn-primary">
+                        <asp:LinkButton runat="server" CommandArgument='<%# Eval("IdEmpleado") %>' OnClick="Editar_Click" CssClass="btn btn-sm btn-primary">
                             Editar
                         </asp:LinkButton>
 
-                        <asp:LinkButton runat="server" CommandArgument="<%# Eval("IdEmpleado") %>" OnClick="Eliminar_Click" CssClass="btn btn-sm btn-danger" OnClientClick="return confirm('¿Desea eliminar?')">
+                        <asp:LinkButton runat="server" CommandArgument='<%# Eval("IdEmpleado") %>' OnClick="Eliminar_Click" CssClass="btn btn-sm btn-danger" OnClientClick="return confirm('¿Desea eliminar?')">
                             Eliminar
                         </asp:LinkButton>
                     </ItemTemplate>
